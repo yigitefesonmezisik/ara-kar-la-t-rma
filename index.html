@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Araç Karşılaştırma</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Araç Karşılaştırma Uygulaması</h1>
+    <div class="filter">
+      <input type="text" id="search" placeholder="Araç ismini arayın...">
+      <select id="priceFilter">
+        <option value="">Fiyata Göre Filtrele</option>
+        <option value="low">Düşükten Yükseğe</option>
+        <option value="high">Yüksekten Düşüğe</option>
+      </select>
+    </div>
+    <div class="car-list" id="carList"></div>
+    <button id="compareButton">Seçili Araçları Karşılaştır</button>
+    <div id="comparisonResult" class="comparison-result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
